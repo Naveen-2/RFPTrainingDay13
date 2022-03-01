@@ -5,6 +5,7 @@ public class FindMaximum {
     public static void main(String[] args) {
 
         System.out.println("Maximum number is " + findMax(6,2,3));
+        System.out.println("Maximum number is " + findMax(6.5,2.8,3.2));
 
     }
 
