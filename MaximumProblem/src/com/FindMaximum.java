@@ -1,6 +1,6 @@
 package com;
 
-public class Main {
+public class FindMaximum {
 
     public static void main(String[] args) {
 
@@ -18,4 +18,5 @@ public class Main {
         }
         return max;
     }
+
 }
