@@ -1,12 +1,18 @@
 package com;
 
-public class FindMaximum {
+public class FindMaximum<E extends Comparable<E>> {
+    E x, y, z;
+    public FindMaximum(E x, E y, E z){
+        this.x = x;
+        this.y = y;
+        this.z = z;
+        findMax(x,y,z);
+    }
 
     public static void main(String[] args) {
-
-        System.out.println("Maximum number is " + findMax(6,2,3));
-        System.out.println("Maximum number is " + findMax(6.5,2.8,3.2));
-        System.out.println("Maximum number is " + findMax("Apple","Peach","Banana"));
+        new FindMaximum(6,2,3);
+        new FindMaximum(6.5,2.8,3.2);
+        new FindMaximum("Apple","Peach","Banana");
 
     }
 
@@ -18,6 +24,7 @@ public class FindMaximum {
         if(z.compareTo(max) > 0){
             max = z;
         }
+        System.out.println("Maximum is " + max);
         return max;
     }
 
